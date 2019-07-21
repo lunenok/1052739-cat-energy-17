@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maxim Ditenberg](https://up.htmlacademy.ru/adaptive/17/user/1052739).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://up.htmlacademy.ru/htmlcss/25/user/240222).
 
 ---
 
