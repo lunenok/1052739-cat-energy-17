@@ -1,0 +1,83 @@
+@import "nav.less";
+@import "promo.less";
+@import "programms.less";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 280px;
+}
+
+.header__toogle {
+  position: relative;
+  background-color: black;
+  border: none;
+  height: 2px;
+  width: 25px;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  }
+  &::before {
+    bottom: 5px;
+  }
+  &::after {
+    top: 5px;
+  }
+}
+
+button {
+  border: none;
+  width: 320px;
+  height: 40px;
+  background-color:#68b738;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
