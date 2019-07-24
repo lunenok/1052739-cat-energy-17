@@ -1,0 +1,42 @@
+.place {
+  width: 320px;
+}
+
+.place__dealer {
+  width: 130px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #111111;
+}
+
+.place__description {
+  width: 135px;
+  font-family: arial;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #444444;
+}
+
+.place-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 280px;
+}
+
+.place__map {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 55px;
+    height: 53px;
+    background-image: url(/img/map-pin.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
