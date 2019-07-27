@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswaldregular.woff2) format("woff2");
+  src: url(../fonts/oswaldregular.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswaldmedium.woff2) format("woff2");
+  src: url(../fonts/oswaldmedium.woff) format("woff");
+  font-weight: 500;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+.page {
+  font-family: "Oswald";
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 1px gray;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  padding-top: 13px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 38px;
+  max-width: 280px;
+}
+
+.header-wrapper--catalog {
+  margin-bottom: 29px;
+}
+
+.header__toogle {
+  position: relative;
+  background-color: black;
+  border: none;
+  height: 2px;
+  width: 25px;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  }
+  &::before {
+    bottom: 5px;
+  }
+  &::after {
+    top: 5px;
+  }
+}
+
+.button {
+  display: block;
+  border: none;
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  background-color:#68b738;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.promo {
+  width: 320px;
+  margin-bottom: 22px;
+}
+
+.proramms__item {
+  margin-bottom: 22px;
+}
+
+.example {
+  margin-bottom: 26px;
+}

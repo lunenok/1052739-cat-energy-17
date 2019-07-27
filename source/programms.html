@@ -3,44 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="main-header">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="../img/svg/logo-mobile-header-svg.svg" width="191px" height="39px" alt="Питание для котов">
+    <header class="header">
+      <div class="header-wrapper header-wrapper--catalog">
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="../img/svg/logo-mobile-header-svg.svg" width="191px" height="39px" alt="Питание для котов">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button"></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+        <button class="header__toogle" type="button"></button>
+      </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item site-list__item--active">
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="nav__item">
+              <a class="nav__link">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Подбор программы</a>
+            <li class="nav__item">
+              <a class="nav__link" href="programms.html">Подбор программы</a>
             </li>
           </ul>
-        </nav>
+      </nav>
     </header>
     <main class="page-main">
       <section class="programm-choise">
         <h1 class="programm-choise__title">Подбор программ</h1>
         <span class="programm-choise__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
         <form class="programm-form">
-          <div class="programm-form__containter">
-            <label class="programm-form__label" for="name">Имя:*</label>
-            <input class="programm-form__input" type="text" id="name" placeholder="Барсик">
-          </div>
-          <div class="programm-form__containter">
-            <label class="programm-form__label" for="weight">Вес (кг):*</label>
-            <input class="programm-form__input" type="text" id="weight" placeholder="7">
-          </div>
-          <div class="programm-form__containter">
-            <label class="programm-form__label" for="age">Возраст(лет):</label>
-            <input class="programm-form__input" type="text" id="age" placeholder="7">
-          </div>
+          <fieldset class="programm-form__common">
+            <legend class="programm-toogle__legend visualy-hidden">Общая информация о коте</legend>
+            <div class="programm-form__containter">
+              <label class="programm-form__label" for="name">Имя:*</label>
+              <input class="programm-form__input" type="text" id="name" placeholder="Барсик">
+            </div>
+            <div class="programm-form__containter">
+              <label class="programm-form__label" for="weight">Вес (кг):*</label>
+              <input class="programm-form__input" type="text" id="weight" placeholder="7">
+            </div>
+            <div class="programm-form__containter">
+              <label class="programm-form__label" for="age">Возраст(лет):</label>
+              <input class="programm-form__input" type="text" id="age" placeholder="7">
+            </div>
+          </fieldset>
           <fieldset class="programm-toogle programm-toogle--cat-information">
             <legend class="programm-toogle__legend visualy-hidden">Выбор программы</legend>
             <ul class="programm-toogle__list">
@@ -58,86 +65,83 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="owner-information">
+            <legend class="section-title">Контактные данные (владельца кота)</legend>
+            <form class="programm-form">
+              <div class="programm-form__containter">
+                <label class="programm-form__label" for="email">E-mail:*</label>
+                <input class="programm-form__input" type="text" id="email" placeholder="kuklachev@gmail.com">
+              </div>
+              <div class="programm-form__containter">
+                <label class="programm-form__label" for="telephone">Телефон:*</label>
+                <input class="programm-form__input" type="text" id="telephone" placeholder="8(960)900-60-90">
+              </div>
+            </form>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="section-title">Комментарий</legend>
+            <textarea class="comment-form_input">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="programm-toogle">
+            <legend class="programm-toogle__legend">Дополнительно</legend>
+            <ul class="programm-toogle__list">
+              <li class="programm-toogle__item">
+                <input class="programm-toogle__input" type="checkbox" id="sugar" name="slim-programm" checked>
+                <label for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="programm-toogle__item">
+                <input class="programm-toogle__input" type="checkbox" id="water" name="slim-programm">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="programm-toogle__item">
+                <input class="programm-toogle__input" type="checkbox" id="milk" name="slim-programm">
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="programm-toogle__item">
+                <input class="programm-toogle__input" type="checkbox" id="vitamins" name="slim-programm">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="programm-button button" type="submit">Отправить заявку</button>
+          <span class="main-field">* - Обязательные поля</span>
         </form>
       </section>
-      <section class="owner-information">
-        <h2 class="section-title">Контактные данные (владельца кота)</h2>
-        <form class="programm-form">
-          <div class="programm-form__containter">
-            <label class="programm-form__label" for="email">E-mail:*</label>
-            <input class="programm-form__input" type="text" id="email" placeholder="kuklachev@gmail.com">
-            <button class="program-form__contact-button"></button>
-          </div>
-          <div class="programm-form__containter">
-            <label class="programm-form__label" for="telephone">Телефон:*</label>
-            <input class="programm-form__input" type="text" id="telephone" placeholder="8(960)900-60-90">
-            <button class="program-form__contact-button"></button>
-          </div>
-        </form>
-      </section>
-      <section class="comment">
-        <h2 class="section-title">Комментарий</h2>
-        <form class="comment-form">
-          <input class="comment-form_input" type="text" placeholder="Расскажите обо всех повадках кота">
-        </form>
-      </section>
-      <section class="supplies">
-        <h2 class="section-title">Дополнительно</h2>
-        <fieldset class="programm-toogle">
-          <legend class="programm-toogle__legend visualy-hidden">Дополнительно</legend>
-          <ul class="programm-toogle__list">
-            <li class="programm-toogle__item">
-              <input class="programm-toogle__input" type="checkbox" id="sugar" name="slim-programm" checked>
-              <label for="sugar">Сахарозаменитель</label>
-            </li>
-            <li class="programm-toogle__item">
-              <input class="programm-toogle__input" type="checkbox" id="water" name="slim-programm">
-              <label for="water">Питьевая вода</label>
-            </li>
-            <li class="programm-toogle__item">
-              <input class="programm-toogle__input" type="checkbox" id="milk" name="slim-programm">
-              <label for="milk">Молоко</label>
-            </li>
-            <li class="programm-toogle__item">
-              <input class="programm-toogle__input" type="checkbox" id="vitamins" name="slim-programm">
-              <label for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-      </section>
-      <button class="programm-button button" type="submit">Отправить заявку</button>
-      <span class="main-field">* - Обязательные поля</span>
       <section class="place">
         <h2 class="visually-hidden">Местоположение</h2>
         <span class="place__dealer">Приглашаем к сотрудничеству дилеров!</span>
-        <div class="place__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</div>
-        <img class="place_map" src="../img/map.jpg" width="320px" height="400px">
+        <adress class="place__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
+        <img class="place_map" src="../img/map.jpg" width="320px" height="362px">
         <img class="place_pin" src="../img/map-pin.png" width="113px" height="106px">
       </section>
     </main>
-    <footer class="main-footer">
-      <img class="main-footer__logo" src="../img/svg/footer-logo-svg.svg" width="128px" height="24px">
-      <ul class="main-footer__social-list">
-        <li class="main-footer__social-list">
-          <a class="main-footer__social-button" href="#">
-            <img src="../img/svg/m-vk-svg.svg" width="22" height="12" alt="vk">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="footer__logo" src="../img/svg/footer-logo-svg.svg" width="128px" height="24px">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-button" href="#">
+              <img src="../img/svg/m-vk-svg.svg" width="22" height="12" alt="vk">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-button" href="#">
+              <img src="../img/svg/m-insta-svg.svg" width="17" height="17" alt="instagram">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-button" href="#">
+              <img src="../img/svg/m-fb-svg.svg" width="10" height="19" alt="facebook">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <span class="footer__academy-name">HTML Academy</span>
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="footer__html-logo" src="../img/svg/htmlacademy-svg.svg" width="27px" height="34px">
           </a>
-        </li>
-        <li class="main-footer__social-list">
-          <a class="main-footer__social-button" href="#">
-            <img src="../img/svg/m-insta-svg.svg" width="17" height="17" alt="instagram">
-          </a>
-        </li>
-        <li class="main-footer__social-list">
-          <a class="main-footer__social-button" href="#">
-            <img src="../img/svg/m-fb-svg.svg" width="10" height="19" alt="facebook">
-          </a>
-        </li>
-      </ul>
-      <span class="main-footer__copyright">HTML Academy</span>
-      <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="main-footer__html-logo" src="../img/svg/htmlacademy-svg.svg" width="27px" height="34px">
-      </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
