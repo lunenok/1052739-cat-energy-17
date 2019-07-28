@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header-wrapper header-wrapper--catalog">
         <a class="header__logo" href="index.html">
@@ -29,90 +29,89 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="programm-choise">
-        <h1 class="programm-choise__title">Подбор программ</h1>
-        <span class="programm-choise__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
-        <form class="programm-form">
-          <fieldset class="programm-form__common">
-            <legend class="programm-toogle__legend visualy-hidden">Общая информация о коте</legend>
-            <div class="programm-form__containter">
-              <label class="programm-form__label" for="name">Имя:*</label>
-              <input class="programm-form__input" type="text" id="name" placeholder="Барсик">
+      <section class="selection">
+        <h1 class="selection__title">Подбор программ</h1>
+        <span class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
+        <form class="selection__form">
+          <fieldset class="selection__fieldset">
+            <legend class="selection__name visually-hidden">Общая информация о коте</legend>
+            <div class="selection__containter">
+              <label class="selection__label" for="name">Имя:*</label>
+              <input class="selection__input" type="text" id="name" placeholder="Барсик">
             </div>
-            <div class="programm-form__containter">
-              <label class="programm-form__label" for="weight">Вес (кг):*</label>
-              <input class="programm-form__input" type="text" id="weight" placeholder="7">
+            <div class="selection__containter">
+              <label class="selection__label" for="weight">Вес (кг):*</label>
+              <input class="selection__input" type="text" id="weight" placeholder="7">
             </div>
-            <div class="programm-form__containter">
-              <label class="programm-form__label" for="age">Возраст(лет):</label>
-              <input class="programm-form__input" type="text" id="age" placeholder="7">
+            <div class="selection__containter">
+              <label class="selection__label" for="age">Возраст(лет):</label>
+              <input class="selection__input" type="text" id="age" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="programm-toogle programm-toogle--cat-information">
-            <legend class="programm-toogle__legend visualy-hidden">Выбор программы</legend>
-            <ul class="programm-toogle__list">
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="radio" id="slim" name="slim-programm" checked>
-                <label for="slim">Похудение</label>
+          <fieldset class="selection__fieldset selection__fieldset--radio">
+            <legend class="selection__name visually-hidden">Выбор программы</legend>
+            <ul class="selection__list selection__list--radio">
+              <li class="selection__item">
+                <input class="selection__radio" type="radio" id="slim" name="slim-programm" checked>
+                <label class="selection__label" for="slim">Похудение</label>
               </li>
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="radio" id="big" name="slim-programm">
-                <label for="big">Набор массы</label>
+              <li class="selection__item">
+                <input class="selection__radio" type="radio" id="big" name="slim-programm">
+                <label class="selection__label" for="big">Набор массы</label>
               </li>
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="radio" id="slim" name="slim-programm">
-                <label for="slim">Не знаю (нужен ваш совет)</label>
+              <li class="selection__item">
+                <input class="selection__radio" type="radio" id="slim" name="slim-programm">
+                <label class="selection__label" for="slim">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="owner-information">
-            <legend class="section-title">Контактные данные (владельца кота)</legend>
-            <form class="programm-form">
-              <div class="programm-form__containter">
-                <label class="programm-form__label" for="email">E-mail:*</label>
-                <input class="programm-form__input" type="text" id="email" placeholder="kuklachev@gmail.com">
-              </div>
-              <div class="programm-form__containter">
-                <label class="programm-form__label" for="telephone">Телефон:*</label>
-                <input class="programm-form__input" type="text" id="telephone" placeholder="8(960)900-60-90">
-              </div>
-            </form>
+          <fieldset class="selection__fieldset selection__fieldset--owner">
+          <legend class="selection__name">Контактные данные (владельца кота)</legend>
+            <div class="selection__containter">
+              <label class="selection__label" for="email">E-mail:*</label>
+              <input class="selection__input" type="text" id="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="selection__containter">
+              <label class="selection__label" for="telephone">Телефон:*</label>
+              <input class="selection__input" type="text" id="telephone" placeholder="8(960)900-60-90">
+            </div>
           </fieldset>
-          <fieldset class="comment">
-            <legend class="section-title">Комментарий</legend>
-            <textarea class="comment-form_input">Расскажите обо всех повадках кота</textarea>
+          <fieldset class="selection__fieldset selection__fieldset--comment">
+            <legend class="selection__name">Комментарий</legend>
+            <textarea class="selection_textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="programm-toogle">
-            <legend class="programm-toogle__legend">Дополнительно</legend>
-            <ul class="programm-toogle__list">
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="checkbox" id="sugar" name="slim-programm" checked>
-                <label for="sugar">Сахарозаменитель</label>
+          <fieldset class="selection__fieldset">
+            <legend class="selection__name selection__name--additional">Дополнительно</legend>
+            <ul class="selection__list selection__list--checkbox">
+              <li class="selection__item">
+                <input class="selection__checkbox" type="checkbox" id="sugar" name="slim-programm" checked>
+                <label class="selection__label" for="sugar">Сахарозаменитель</label>
               </li>
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="checkbox" id="water" name="slim-programm">
-                <label for="water">Питьевая вода</label>
+              <li class="selection__item">
+                <input class="selection__checkbox" type="checkbox" id="water" name="slim-programm">
+                <label class="selection__label" for="water">Питьевая вода</label>
               </li>
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="checkbox" id="milk" name="slim-programm">
-                <label for="milk">Молоко</label>
+              <li class="selection__item">
+                <input class="selection__checkbox" type="checkbox" id="milk" name="slim-programm">
+                <label class="selection__label" for="milk">Молоко</label>
               </li>
-              <li class="programm-toogle__item">
-                <input class="programm-toogle__input" type="checkbox" id="vitamins" name="slim-programm">
-                <label for="vitamins">Витамины</label>
+              <li class="selection__item">
+                <input class="selection__checkbox" type="checkbox" id="vitamins" name="slim-programm">
+                <label class="selection__label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="programm-button button" type="submit">Отправить заявку</button>
-          <span class="main-field">* - Обязательные поля</span>
+          <button class="selection-button button" type="submit">Отправить заявку</button>
+          <span class="selection-main">* - Обязательные поля</span>
         </form>
       </section>
       <section class="place">
         <h2 class="visually-hidden">Местоположение</h2>
-        <span class="place__dealer">Приглашаем к сотрудничеству дилеров!</span>
-        <adress class="place__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
-        <img class="place_map" src="../img/map.jpg" width="320px" height="362px">
-        <img class="place_pin" src="../img/map-pin.png" width="113px" height="106px">
+        <div class="place-container">
+          <span class="place__dealer">Приглашаем к сотрудничеству дилеров!</span>
+          <adress class="place__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
+        </div>
+        <img class="place__map" src="../img/map.jpg" width="320px" height="362px">
       </section>
     </main>
     <footer class="footer">
