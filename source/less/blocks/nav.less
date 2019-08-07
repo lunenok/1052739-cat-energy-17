@@ -1,6 +1,6 @@
 .nav {
   display: none;
-  width: 320px;
+  width: 100%;
 }
 
 .nav--show {
@@ -29,4 +29,29 @@
   font-weight: 500;
   text-transform: uppercase;
   color: black;
+}
+
+@media (min-width:768px) {
+  .nav {
+    display: flex;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    min-width: 440px;
+    border-top: none;
+  }
+
+  .nav__item {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
 }
