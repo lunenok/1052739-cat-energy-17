@@ -1,14 +1,13 @@
 .example {
+  margin: 0 auto;
+  margin-bottom: 27px;
   padding-top: 37px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
   width: 320px;
   background-color: #f2f2f2;
 }
 
 .example__title {
-  margin: 0;
+  margin: 0 20px;
   margin-bottom: 23px;
   font-size: 36px;
   line-height: 60px;
@@ -18,13 +17,21 @@
 
 .example__info {
   width: 279px;
-  margin: 0 auto;
+  margin: 0 20px;
   margin-bottom: 25px;
   font-family: arial;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
   text-align: left;
+}
+
+.example__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .exaple__result {
@@ -56,15 +63,10 @@
   text-align: center;
 }
 
-.example__container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 34px;
-}
-
 .example__price {
   display: block;
   margin: 0 auto;
+  margin-top: 34px;
   margin-bottom: 40px;
   width: 200px;
   font-size: 14px;
@@ -74,36 +76,46 @@
   text-align: center;
 }
 
-.example__image {
-  margin-bottom: 31px;
-}
+@media (min-width:768px) {
+  .example {
+    width: 768px;
+    background-color:white;
+    margin-bottom: 75px;
+  }
 
-.example__compare {
-  display: flex;
-  justify-content: space-around;
-}
+  .example__info {
+    font-size: 16px;
+    line-height: 24px;
+    width: 680px;
+  }
 
-.example__compare-text {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+  .exaple__result {
+    margin-right: 42px;
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 
-.example__graphic {
-  position: relative;
-  width: 84px;
-  height: 14px;
-  border-radius: 6px;
-  border: solid 1px #cdcdcd;
-  background-color: #ffffff;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 3px;
-    right: 42px;
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #68b738;
+  .example__description {
+    top: 62px;
+    left: 12px;
+    width: 135px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: white;
+  }
+
+  .example__price {
+    margin: 0;
+    margin-left: auto;
+    width: 180px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .example__container {
+    margin-bottom: 255px;
   }
 }

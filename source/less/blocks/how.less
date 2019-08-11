@@ -24,11 +24,6 @@
   margin-left: 81px;
   margin-bottom: 26px;
   width: 195px;
-  font-family: arial;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  text-align: left;
   &::before {
     content:"";
     position: absolute;
@@ -51,6 +46,14 @@
   }
 }
 
+.how__discription {
+  font-family: arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-align: left;
+}
+
 .how__item--leaf::after {
   background-image: url("../../img/advantage-leaf@1x.png");
 }
@@ -65,4 +68,48 @@
 
 .how__item--clock::after {
   background-image: url("../../img/advantage-clock@1x.png");
+}
+
+@media (min-width:768px) {
+  .how {
+    width: 708px;
+  }
+
+  .how__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+  .how__item {
+    margin-left: 0;
+    padding-top: 117px;
+    width: 354px;
+    min-height: 235px;
+    &::before {
+      top: 37px;
+      left: 0px;
+      width: 80px;
+      height: 80px;
+    }
+    &::after {
+      top: 50px;
+      left: 15px;
+    }
+  }
+  .how__discription {
+    position: relative;
+    width: 250px;
+    z-index: 5;
+    &::after {
+      content: "1";
+      position: absolute;
+      font-family: "Oswald";
+      left: 100px;
+      top: 0;
+      position: absolute;
+      font-size: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
 }

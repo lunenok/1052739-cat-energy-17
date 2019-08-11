@@ -1,5 +1,6 @@
 .place {
   width: 320px;
+  margin: 0 auto;
   background-color: white;
 }
 
@@ -24,9 +25,8 @@
 .place-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 20px;
   margin-bottom: 25px;
-  width: 280px;
   z-index: 2;
 }
 
@@ -42,5 +42,31 @@
     background-image: url(/img/map-pin.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width:768px) {
+  .place {
+    width: 768px;
+  }
+
+  .place__dealer {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .place__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .place-container {
+    margin: 0 72px;
+    margin-bottom: 62px;
+  }
+
+  .place__map {
+    width: 768px;
+    height: 400px;
   }
 }

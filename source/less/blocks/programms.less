@@ -1,8 +1,7 @@
 .proramms__item {
   margin: 0 auto;
   margin-bottom: 22px;
-  padding: 0;
-  padding-bottom: 20px;
+  padding: 20px;
   padding-top: 29px;
   width: 280px;
   background-color: #f2f2f2;
@@ -15,7 +14,7 @@
   width: 150px;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: #111111;
@@ -30,7 +29,7 @@
 }
 
 .programms__title--slim {
-  margin-left: 70px;
+  margin-left: 50px;
   &::before{
     top: -6px;
     right: 148px;
@@ -48,7 +47,7 @@
 }
 
 .programms__title--big {
-  margin-left: 84px;
+  margin-left: 64px;
   &::before {
     top: -6px;
     right: 162px;
@@ -67,7 +66,7 @@
 
 .programms__description {
   width: 235px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 40px;
   font-family: arial;
   font-size: 14px;
@@ -79,7 +78,6 @@
 .programms__link {
   position: relative;
   width: 100px;
-  margin-left: 20px;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
@@ -95,5 +93,54 @@
     height: 12px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width:768px) {
+  .proramms__item {
+    width: 708px;
+  }
+
+  .programms__description {
+    width: 375px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 20px;
+    &::after {
+      left: 115px;
+      top: 10px;
+    }
+  }
+
+  .programms__title {
+    width: 210px;
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+    text-align: left;
+    &::before {
+      top: 15px;
+      left: 400px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .programms__title--slim::after {
+    top: 15px;
+    left: 440px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .programms__title--big::after {
+    top: 60px;
+    left: 355px;
+    width: 268px;
+    height: 113px;
   }
 }
