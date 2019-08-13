@@ -1,4 +1,4 @@
-.how {
+.how__container {
   display: block;
   width: 280px;
   margin: 0 auto;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width:768px) {
-  .how {
+  .how__container {
     width: 708px;
   }
 
@@ -85,6 +85,7 @@
     padding-top: 117px;
     width: 354px;
     min-height: 235px;
+    counter-increment: step-counter;
     &::before {
       top: 37px;
       left: 0px;
@@ -101,7 +102,7 @@
     width: 250px;
     z-index: 5;
     &::after {
-      content: "1";
+      content: counter(step-counter);
       position: absolute;
       font-family: "Oswald";
       left: 100px;

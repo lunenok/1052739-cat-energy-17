@@ -1,6 +1,6 @@
-.promo {
-  position: relative;
-  width: 100%;
+.promo__container {
+  margin: 0 auto;
+  width: 320px;
   padding-top: 26px;
   background-image: url(../../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
@@ -55,14 +55,19 @@
 .promo__button {
   display: block;
   margin: 0 auto;
+  padding: 11px 0;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 @media (min-width:768px) {
-  .promo {
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
     background-image: none;
   }
 
@@ -71,32 +76,45 @@
     height: 609px;
   }
 
+  .promo__logo-container {
+    order: 4;
+  }
+
   .promo__headline {
     margin-left: 120px;
+    margin-bottom: 33px;
     font-size: 60px;
     line-height: 60px;
     width: 420px;
     color: #111111;
     text-align: left;
   }
+
   .promo__motto {
     margin-left: 120px;
+    margin-bottom: 48px;
     width: 290px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: #111111;
   }
+
+  .promo__logo-container {
+    margin-top: -75px;
+  }
+
   .promo__image {
     display: none;
   }
+
   .promo__button {
-    position: absolute;
-    top: 220px;
-    left: 120px;
+    margin-left: 120px;
+    padding: 15px 0;
     width: 245px;
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+    z-index: 2;
   }
 }
