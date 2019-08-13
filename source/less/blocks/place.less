@@ -1,5 +1,5 @@
 .place__container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
 }
@@ -23,9 +23,11 @@
 }
 
 .place__info {
+  width: 320px;
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  padding: 0 20px;
+  margin: 0 auto;
   margin-bottom: 25px;
   z-index: 2;
 }
@@ -47,7 +49,7 @@
 
 @media (min-width:768px) {
   .place__container {
-    width: 768px;
+    width: 100%;
   }
 
   .place__dealer {
@@ -61,12 +63,18 @@
   }
 
   .place__info {
-    margin: 0 72px;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 70px;
     margin-bottom: 62px;
   }
 
   .place__map {
     width: 768px;
     height: 400px;
+  }
+
+  .place__yandex {
+    width: 100%;
   }
 }
