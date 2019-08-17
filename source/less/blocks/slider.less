@@ -17,7 +17,7 @@
   margin-bottom: 31px;
 }
 
-.slider__pic-after {
+.slider__container-after{
   display: none;
 }
 
@@ -49,17 +49,65 @@
 @media (min-width:768px) {
   .slider {
     margin: 0 auto;
+    padding-bottom: 74px;
     width: 768px;
-    min-height: 462px;
+    // background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 50%, #e9e9e9 50%, #e9e9e9 100%);
   }
 
   .slider__pictures {
     position: relative;
   }
 
+  .slider__container-before {
+    position: absolute;
+    overflow: hidden;
+    left: 46px;
+    top: -170px;
+    width: 338px;
+    height: 515px;
+  }
+
+  .slider__container-after {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: -168px;
+    right: 87px;
+    width: 298px;
+    height: 517px;
+  }
+
+  .slider__pic--after {
+    margin-left: -337px;
+    height: 517px;
+    width: auto;
+  }
+
+  .slider__pic--before {
+    width: 690px;
+    height: 517px;
+  }
+
   .slider__toggle-container {
     padding: 0 100px;
-    padding-top: 400px;
+    padding-top: 368px;
+  }
+
+  .slider__text {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      border-bottom: 1px dotted fade(@blackcolor, 23%);
+      /*Ничего что border'ом сделал подчеркивание?*/
+    }
   }
 
   .slider__toggle {
@@ -84,27 +132,34 @@
       background-color: white;
     }
   }
+}
 
-  .slider__pic--after {
-    display: block;
-    position: absolute;
-    top: -150px;
-    bottom: 20px;
-    height: 517px;
-    width: auto;
+@media (min-width:1440px) {
+  .slider__container-before {
+    top: -262px;
+    left: 91px;
   }
 
   .slider__pic--before {
-    position: absolute;
-    left: 35px;
-    top: -150px;
-    height: 499px;
-    width: auto;
+    margin-left: -27px;
   }
 
-  .slider__before-container {
-    width: 338px;
-    height: 449px;
+  .slider__container-after {
+    top: -261px;
+    right: 41px;
   }
 
+  .slider__pic--after {
+    margin-left: -365px;
+  }
+
+  .slider__toggle-container {
+    padding-top: 267px;
+    padding-right: 49px;
+    padding-left: 148px;
+  }
+
+  .slider {
+    background: transparent;
+  }
 }
