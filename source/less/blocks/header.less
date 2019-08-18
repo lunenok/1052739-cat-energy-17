@@ -15,7 +15,7 @@
   height: 19px;
 }
 
-@media (min-width:768px) {
+@media (min-width: @tablet-width) {
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-width) {
   .header__container {
     position: relative;
     margin: 0 auto;
@@ -48,10 +48,6 @@
     padding-top: 54px;
     z-index: 2;
   }
-
-  // .header__container {
-  //   margin: 0;
-  // }
 
   .header__logo-image {
     width: 203px;
