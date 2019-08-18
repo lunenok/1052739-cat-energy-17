@@ -1,0 +1,220 @@
+.selection {
+  margin-bottom: 60px;
+}
+
+.selection__title {
+  margin: 0 20px;
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-align: left;
+  color: #111111;
+}
+
+.selection__description {
+  display: block;
+  margin: 0 20px;
+  margin-bottom: 38px;
+  width: 240px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.selection__fieldset {
+  padding: 0;
+  margin: 0 20px;
+  border-style: none;
+  margin-bottom: 11px;
+}
+
+.selection__fieldset--radio {
+  position:relative;
+  margin: 0;
+  margin-bottom: 29px;
+  border: 1px solid #ededed;
+}
+
+.selection__fieldset--owner {
+  margin-bottom: 14px;
+}
+
+.selection__fieldset--comment {
+  margin-bottom: 28x;
+}
+
+.selection__name {
+  margin-bottom: 33px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.selection__name--additional {
+  margin-bottom: 40px;
+}
+
+.selection__containter {
+  position: relative;
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.selection__label {
+  margin-right: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.selection__checkbox + .selection__label--checkbox,
+.selection__radio + .selection__label--radio {
+  position: relative;
+}
+
+.selection__checkbox + .selection__label--checkbox::before,
+.selection__radio + .selection__label--radio::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+}
+
+.selection__label--radio::before {
+  border-radius: 50%;
+}
+
+.selection__checkbox:checked + .selection__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 22px;
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 21.1 15.5' style='enable-background:new 0 0 21.1 15.5;' xml:space='preserve' fill='%2368b738'%3E%3Cpolygon points='20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 '/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+.selection__radio:checked + .selection__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.selection__input {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+}
+
+.selection__input::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.section__icon-email {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  width: 18px;
+  height: 14px;
+}
+
+.section__icon-telephone {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  width: 21px;
+  height: 21px;
+}
+
+.selection_textarea {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 15px;
+  min-height: 150px;
+  width: 280px;
+  border: 1px solid #cdcdcd
+}
+
+// Отпихал тут маргином нижний блок
+
+.selection_textarea::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.selection__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.selection__list--radio {
+  padding-top: 25px;
+  padding-left: 65px;
+}
+
+.selection__list--checkbox {
+  padding-left: 45px;
+}
+
+.selection__item {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.selection__radio,
+.selection__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.selection-button {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.selection-main {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  font-family: arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
