@@ -8,22 +8,23 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px") srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px") srcset="img/logo-tablet.svg">
-            <img class="header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="Питание для котов">
-          </picture>
-        </a>
-        <button class="header__toogle" type="button">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-            <rect y="16" width="24" height="2"/>
-            <rect y="8" width="24" height="2"/>
-            <rect width="24" height="2"/>
-          </svg>
-        </button>
-      </div>
+      <div class="header__container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px") srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px") srcset="img/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="Питание для котов">
+            </picture>
+          </a>
+          <button class="header__toogle" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+              <rect y="16" width="24" height="2"/>
+              <rect y="8" width="24" height="2"/>
+              <rect width="24" height="2"/>
+            </svg>
+          </button>
+        </div>
         <nav class="nav nav--show">
           <ul class="nav__list">
             <li class="nav__item nav__item-active">
@@ -37,12 +38,13 @@
             </li>
           </ul>
         </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="promo">
         <div class="promo__container">
           <h1 class="promo__headline">Функциональное питание для котов</h1>
-          <span class="promo__motto">Занялся собой? Займись котом</span>
+          <span class="promo__motto">Занялся собой? Займись котом!</span>
           <picture class="promo__logo-container">
             <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/index-can-desktop@1x.png">
@@ -86,8 +88,8 @@
         </div>
       </secion>
       <section class="example">
+        <h2 class="example__title">Живой пример</h2>
         <div class="example__container">
-          <h2 class="example__title">Живой пример</h2>
           <div class="example__wrapper">
             <div class="example__description-container">
               <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -108,24 +110,26 @@
               </div>
             </div>
             <div class="slider">
-              <div class="slider__pictures">
-                <div class="slider__container-before">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                    <img class="slider__pic slider__pic--before" src="img/before-mobile@1x.png" width="311px" height="232px" alt="Борис">
-                  </picture>
+              <div class="slider__container">
+                <div class="slider__pictures">
+                  <div class="slider__container-before">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                      <img class="slider__pic slider__pic--before" src="img/before-mobile@1x.png" width="311px" height="232px" alt="Борис">
+                    </picture>
+                  </div>
+                  <div class="slider__container-after">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                      <img class="slider__pic slider__pic--after" src="img/after-mobile@1x.png" width="311px" height="232px" alt="Борис">
+                    </picture>
+                  </div>
                 </div>
-                <div class="slider__container-after">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                    <img class="slider__pic slider__pic--after" src="img/after-mobile@1x.png" width="311px" height="232px" alt="Борис">
-                  </picture>
+                <div class="slider__toggle-container">
+                  <span class="slider__text">было</span>
+                  <div class="slider__toggle"></div>
+                  <span class="slider__text">стало</span>
                 </div>
-              </div>
-              <div class="slider__toggle-container">
-                <span class="slider__text">было</span>
-                <div class="slider__toggle"></div>
-                <span class="slider__text">стало</span>
               </div>
             </div>
           </div>
