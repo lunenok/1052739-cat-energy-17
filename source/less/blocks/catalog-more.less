@@ -51,6 +51,14 @@
   padding-top: 10px;
   background-color: #f2f2f2;
   color: #444444;
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+  &:active {
+    background-color: #ebebeb;
+    color: fade(@blackcolor, 30%);
+  }
 }
 
 @media (min-width: @tablet-width) {
