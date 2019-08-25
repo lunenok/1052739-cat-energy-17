@@ -21,10 +21,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   &:hover,
   &:focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   &:active{
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
@@ -49,7 +49,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // max-width: 70%;
     min-width: 440px;
     margin-bottom: -20px;
     border-top: none;
@@ -82,12 +81,11 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .nav__list {
     min-width: 480px;
   }
 
-  .nav__item-active {
+  .nav__item--main-active {
     &::after {
       background-color: #ffffff;
     }
@@ -95,6 +93,9 @@
   .nav__link {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .nav__link--index {
     color: #ffffff;
   }
 }
