@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   </head>
   <body class="page">
     <header class="header">
       <div class="header__container header__container--index">
         <div class="header__wrapper">
-          <a class="header__logo" href="index.html">
+          <a class="header__logo" href="#">
             <picture>
               <source media="(min-width: 1440px") srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px") srcset="img/logo-tablet.svg">
@@ -46,9 +46,9 @@
           <h1 class="promo__headline">Функциональное питание для котов</h1>
           <span class="promo__motto">Занялся собой? Займись котом!</span>
           <picture class="promo__logo-container">
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-desktop@1x.png">
-            <img class="promo__logo" src="img/index-can-mobile@1x.png" width="280px" height="270px">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <img class="promo__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280px" height="270px">
           </picture>
           <a class="promo__button button" href="#">Подобрать программу</a>
         </div>
@@ -56,12 +56,12 @@
       <section class="programms">
         <div class="programms__container">
           <h2 class="visually-hidden">Предлагаемые программы</h2>
-          <div class="proramms__item programms__item--slim">
+          <div class="programms__item programms__item--slim">
             <h3 class="programms__title programms__title--slim">Похудение</h3>
             <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programms__link" href="programms.html">Каталог slim</a>
           </div>
-          <div class="proramms__item programms__item--big">
+          <div class="programms__item programms__item--big">
             <h3 class="programms__title programms__title--big">Набор массы</h3>
             <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programms__link" href="programms.html">Каталог pro</a>
@@ -94,11 +94,11 @@
             <div class="example__description-container">
               <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
               <div class="example__description">
-                <div class="exaple__result">
+                <div class="example__result">
                   5 кг
                   <span class="example__position">снижение веса</span>
                 </div>
-                <div class="exaple__result">
+                <div class="example__result">
                   60 дней
                   <span class="example__position">затрачено времени</span>
                 </div>
@@ -114,13 +114,15 @@
                 <div class="slider__pictures">
                   <div class="slider__container-before">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                       <img class="slider__pic slider__pic--before" src="img/before-mobile@1x.png" width="311px" height="232px" alt="Борис">
                     </picture>
                   </div>
                   <div class="slider__container-after">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                      <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                       <img class="slider__pic slider__pic--after" src="img/after-mobile@1x.png" width="311px" height="232px" alt="Борис">
                     </picture>
                   </div>

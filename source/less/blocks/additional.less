@@ -42,13 +42,13 @@
   color: #222222;
 }
 
-.addition__wrapper {
+.additional__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-.additiona__info {
+.additional__info {
   font-family: arial;
   font-size: 14px;
   line-height: 14px;
@@ -70,6 +70,10 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
+}
+
+.additional__gift-image {
+  display: block;
 }
 
 .additional__gift-description {
@@ -101,22 +105,66 @@
     margin: 0 auto;
   }
 
-  .additional__container {
-    // width: 768px;
-    // margin: 0 auto;
+  .additional__list {
+    margin-bottom: 76px;
   }
 
   .additional__title {
+    position: relative;
+    display: inline-block;
     margin-left: 67px;
+    margin-bottom: 67px;
     font-size: 36px;
     line-height: 36px;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      top: 23px;
+      left: 0;
+      height: 3px;
+      background: @darkgreencolor;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      top: 23px;
+      right: 0;
+      height: 3px;
+      background: @darkgreencolor;
+      z-index: -1;
+    }
+  }
+
+  .additional__name {
+    margin-bottom: 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__wrapper {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 23px;
+  }
+
+  .additional__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additiona__info--price {
+    margin-left: 53px;
   }
 
   .additional__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 28px 38px;
+    padding: 24px 38px;
     width: 708px;
     border: none;
     border: 1px solid @graycolor;
@@ -127,15 +175,19 @@
   }
 
   .additional__button {
+    font-size: 16px;
+    line-height: 20px;
     width: 633px;
+    height: 40px;
     margin: 0;
   }
 
-  .addition__wrapper {
+  .additional__wrapper {
     width: 224px;
   }
 
   .additional__gift-container {
+    margin-bottom: 73px;
     width: 708px;
   }
 
@@ -145,12 +197,12 @@
   }
 
   .additional__gift-description {
-    top: 65px;
-    right: 100px;
+    top: 69px;
+    right: 104px;
     text-align: left;
     &::before {
-      top: 0;
-      left: -350px;
+      top: -7px;
+      left: -334px;
     }
   }
 }
@@ -186,7 +238,7 @@
     margin: 0;
   }
 
-  .addition__wrapper {
+  .additional__wrapper {
     margin: 0;
     width: 284px;
   }
