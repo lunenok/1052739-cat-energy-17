@@ -14,6 +14,7 @@
 }
 
 .selection__title {
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -185,9 +186,12 @@
   height: 21px;
 }
 
+.selection__fieldset--comment {
+  margin-bottom: 27px;
+}
+
 .selection_textarea {
   margin: 0 auto;
-  margin-bottom: 17px;
   padding: 15px;
   min-height: 150px;
   min-width: 100%;
@@ -233,12 +237,12 @@
     overflow: hidden;
 }
 
-.selection-button {
+.selection__button {
   margin: 0 auto;
   margin-bottom: 24px;
 }
 
-.selection-main {
+.selection__main {
   display: block;
   margin: 0 auto;
   width: 160px;
@@ -249,12 +253,18 @@
 }
 
 @media (min-width: @tablet-width) {
+
+  .selection {
+    margin-bottom: 73px;
+  }
+
   .selection__title-container {
     margin: 0 auto;
-    width: 628px;
+    width: 708px;
   }
 
   .selection__title {
+    margin-bottom: 53px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -277,8 +287,33 @@
   }
 
   .selection__label {
+    margin-right: 17px;
     .regular_tablet-text
   }
+
+  .selection__list--radio {
+    padding-top: 34px;
+    padding-left: 87px;
+  }
+
+  .selection__item {
+    margin-bottom: 32px;
+  }
+
+  .selection__checkbox + .selection__label--checkbox::before,
+  .selection__radio + .selection__label--radio::before {
+  top: -4px;
+  left: -59px;
+  width: 40px;
+  height: 40px;
+}
+
+  .selection__radio:checked + .selection__label--radio::after {
+    top: 7px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
+}
 
   .selection__input {
     height: 52px;
@@ -287,10 +322,15 @@
 
   .selection__fieldset {
     width: 628px;
+    margin-bottom: 51px;
+  }
+
+  .selection__fieldset--radio {
+    margin-bottom: 76px;
   }
 
   .selection__name {
-    margin-bottom: 70px;
+    margin-bottom: 76px;
     width: auto;
     font-size: 36px;
     line-height: 36px;
@@ -311,19 +351,57 @@
     }
   }
 
+  .selection__fieldset--owner {
+    margin-bottom: 45px;
+    }
+
+  .selection_textarea {
+    padding: 10px 18px;
+    min-height: 174px;
+  }
+
+
   .selection_textarea::-webkit-input-placeholder,
   .selection__input::-webkit-input-placeholder {
     line-height: 30px;
     .regular_tablet-text
   }
 
+  .selection__fieldset--comment {
+    margin-bottom: 62px;
+  }
+
+  .selection__name--additional {
+    margin-bottom: 68px;
+  }
+
+  .selection__fieldset--checkbox {
+    margin-bottom: 12px;
+  }
+
   .selection__list--checkbox {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .selection__item--checkbox {
-    width: 50%;
+    padding-left: 58px;
+    margin-bottom: 50px;
+    width: 205px;
+  }
+
+  .selection__item--checkbox:nth-child(2n-1) {
+    margin-right: 139px;
+  }
+
+  .selection__label--checkbox {
+    margin: 0;
+  }
+
+  .selection__checkbox:checked + .selection__label--checkbox::after {
+    top: 6px;
+    left: -48px;
   }
 
   .selection__sending-container {
@@ -333,13 +411,24 @@
     width: 628px;
   }
 
-  .selection-button {
+  .selection__button {
     margin: 0;
     width: 283px;
+    min-height: 52px;
+  }
+  .selection__main {
+    margin-left: 62px;
+    width: 180px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
+
+  .selection {
+    margin-bottom: 84px;
+  }
 
   .selection__title-container {
     width: 1220px;
@@ -350,7 +439,7 @@
   .selection__description-container {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .selection__description {
@@ -363,7 +452,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 73px;
+    margin-bottom: 49px;
     width: 1220px;
   }
 
@@ -374,7 +463,7 @@
 
   .selection__fieldset--owner {
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 47px;
   }
 
   .selection__contact-container {
@@ -389,7 +478,7 @@
 
   .selection__fieldset--comment {
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 64px;
     width: 1220px;
   }
 
@@ -399,16 +488,29 @@
     margin-bottom: 61px;
   }
 
+  .selection__item--checkbox,
+  .selection__item--checkbox:nth-child(2n-1) {
+    margin-right: 120px;
+  }
+
+  .selection__item--checkbox:nth-child(4n) {
+    margin: 0;
+  }
+
   .selection__fieldset--radio {
     height: 196px;
   }
 
-  .selection__item--checkbox {
-    width: 25%;
+  .selection__fieldset--checkbox {
+    margin-bottom: 17px;
   }
 
-  .selection-button {
+  .selection__button {
     width: 568px;
+  }
+
+  .selection__main {
+    margin-left: 82px;
   }
 
   .selection__sending-container {
