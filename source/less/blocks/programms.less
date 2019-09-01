@@ -4,7 +4,7 @@
 }
 
 .programms__item {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding: 20px;
   padding-top: 29px;
   width: 280px;
@@ -110,6 +110,10 @@
   }
 }
 
+.programms__br--tablet {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .programms__container {
     width: 708px;
@@ -146,19 +150,19 @@
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     text-align: left;
     &::before {
       top: 15px;
-      left: 400px;
+      left: 392px;
       width: 200px;
       height: 200px;
     }
   }
 
   .programms__title--slim::after {
-    top: 15px;
-    left: 440px;
+    top: 3px;
+    left: 420px;
     width: 141px;
     height: 194px;
   }
@@ -169,7 +173,12 @@
     width: 268px;
     height: 113px;
   }
+
+  .programms__br--tabler {
+    display: inline;
+  }
 }
+
 
 @media (min-width: @desktop-width) {
   .programms__container {

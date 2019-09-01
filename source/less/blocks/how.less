@@ -2,6 +2,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .how__title {
@@ -56,6 +57,10 @@
   text-align: left;
 }
 
+.how__br {
+  display: none;
+}
+
 .how__item--leaf::after {
   background-image: url("/../../img/advantage-leaf@1x.png");
 }
@@ -75,7 +80,7 @@
 @media (min-width: @tablet-width) {
   .how__container {
     width: 708px;
-    margin-bottom: 20px;
+    margin-bottom: 37px;
   }
 
   .how__title {
@@ -88,8 +93,10 @@
   .how__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 658px;
   }
+
   .how__item {
     margin-left: 0;
     margin-right: 24px;
@@ -127,10 +134,19 @@
       z-index: -1;
     }
   }
+
+  .how__br {
+    display: inline;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .how__container {
+    width: 1220px;
+    margin-bottom: 13px;
+  }
+
+  .how__list {
     width: 1220px;
   }
 
