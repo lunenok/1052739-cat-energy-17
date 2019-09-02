@@ -14,6 +14,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
   &::before {
     position: absolute;
     content: "";
@@ -23,6 +24,7 @@
     height: 30px;
     background-color: #ededed;
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -40,7 +42,7 @@
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height:16px;
+  line-height: 16px;
   text-align: center;
   color: #444444;
 }
@@ -52,10 +54,12 @@
   background-color: #f2f2f2;
   text-decoration: none;
   color: #444444;
+
   &:hover,
   &:focus {
     background-color: #ebebeb;
   }
+
   &:active {
     background-color: #ebebeb;
     color: fade(@blackcolor, 30%);
@@ -75,12 +79,14 @@
     width: 140px;
     font-size: 20px;
     line-height: 20px;
+
     &::before {
       top: -109px;
       left: 69px;
       height: 60px;
-  }
-    &:after {
+    }
+
+    &::after {
       top: -80px;
       left: 41px;
       width: 60px;
@@ -89,10 +95,9 @@
 
   .catalog-more__description {
     margin-bottom: 83px;
-    font-size: 16px;
-    line-height: 20px;
     width: 170px;
     font-size: 16px;
+    line-height: 20px;
   }
 
   .catalog-more__button {

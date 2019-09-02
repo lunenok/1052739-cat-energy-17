@@ -27,6 +27,7 @@
   padding-top: 13px;
   width: 280px;
   border-bottom: 1px solid #ededed;
+
   &:first-child {
     border-top: 1px solid #ededed;
   }
@@ -81,6 +82,7 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
   &::before {
     content: "";
     position: absolute;
@@ -94,11 +96,9 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .additional {
     width: 768px;
     margin: 0 auto;
-    // overflow-x: hidden;
   }
 
   .additional__list {
@@ -115,6 +115,7 @@
     font-size: 36px;
     line-height: 36px;
     background: white;
+
     &::before {
       content: "";
       position: absolute;
@@ -125,6 +126,7 @@
       background: @darkgreencolor;
       z-index: -1;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -147,6 +149,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     margin-bottom: 23px;
+    width: 224px;
   }
 
   .additional__info {
@@ -164,9 +167,9 @@
     justify-content: space-between;
     padding: 24px 38px;
     width: 708px;
-    border: none;
     border: 1px solid @graycolor;
     border-bottom: none;
+
     &:last-child {
       border-bottom: 1px solid @graycolor;
     }
@@ -178,10 +181,6 @@
     width: 633px;
     height: 40px;
     margin: 0;
-  }
-
-  .additional__wrapper {
-    width: 224px;
   }
 
   .additional__gift-container {
@@ -198,6 +197,7 @@
     top: 72px;
     right: 104px;
     text-align: left;
+
     &::before {
       top: -7px;
       left: -334px;
@@ -206,7 +206,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .additional {
     width: 1440px;
     margin-bottom: 86px;
@@ -245,9 +244,11 @@
   }
 
   .additional__wrapper {
+    justify-content: space-between;
     margin: 0;
     margin-top: 8px;
-    width: 284px;
+    margin-right: 40px;
+    width: 290px;
   }
 
   .additional__button {
@@ -255,6 +256,7 @@
   }
 
   .additional__gift-container {
+    margin: 0;
     width: 245px;
   }
 
@@ -267,24 +269,15 @@
     top: 189px;
     right: 33px;
     text-align: center;
+
     &::before {
       top: -122px;
       left: 66px;
     }
   }
 
-  .additional__wrapper {
-    justify-content: space-between;
-    margin-right: 40px;
-    width: 290px;
-  }
-
   .additional__info--price {
     width: 45px;
     text-align: left;
-  }
-
-  .additional__gift-container {
-    margin: 0;
   }
 }
