@@ -212,6 +212,10 @@
   border: 2px solid #ff8282;
 }
 
+.selection__input--error + svg {
+  fill: #ff8282;
+}
+
 .selection__input::-webkit-input-placeholder {
   .regular_text;
   color: #444444;
@@ -252,6 +256,7 @@
   min-height: 150px;
   min-width: 100%;
   border: 1px solid #cdcdcd;
+  overflow-y: auto;
   .regular_text;
 }
 
@@ -302,7 +307,7 @@
   display: block;
   margin: 0 auto;
   width: 160px;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
@@ -555,6 +560,7 @@
   .selection__fieldset--owner {
     margin: 0 auto;
     margin-bottom: 47px;
+    width: 1220px;
   }
 
   .selection__contact-container {

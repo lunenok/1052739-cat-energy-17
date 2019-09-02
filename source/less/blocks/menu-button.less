@@ -1,4 +1,4 @@
-.menu-button__container {
+.menu-button {
   padding: 0;
   width: 26px;
   height: 26px;
@@ -6,7 +6,11 @@
   background: none;
 }
 
-.menu-button--open {
+.menu-button--nojs {
+  display: none;
+}
+
+.menu-button__icon--open {
   position: relative;
   display: block;
   border: none;
@@ -16,7 +20,7 @@
   background: #000;
 }
 
-.menu-button--open::before {
+.menu-button__icon--open::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -26,7 +30,7 @@
   background: #000;
 }
 
-.menu-button--open::after {
+.menu-button__icon--open::after {
   content: "";
   position: absolute;
   top: -8px;
@@ -36,7 +40,7 @@
   background: #000;
 }
 
-.menu-button--close {
+.menu-button__icon--close {
   position: relative;
   display: block;
   border: none;
@@ -46,7 +50,7 @@
   background: 0;
 }
 
-.menu-button--close::before {
+.menu-button__icon--close::before {
   content: "";
   position: absolute;
   top: 0;
@@ -57,7 +61,7 @@
   background: #000;
 }
 
-.menu-button--close::after {
+.menu-button__icon--close::after {
   content: "";
   position: absolute;
   top: 0;
@@ -66,4 +70,10 @@
   height: 2px;
   transform: rotate(45deg);
   background: #000;
+}
+
+@media (min-width: @tablet-width) {
+  .menu-button {
+    display: none;
+  }
 }

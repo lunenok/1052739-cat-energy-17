@@ -17,8 +17,8 @@
               <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов">
             </picture>
           </a>
-          <button class="menu-button__container" type="button">
-            <span class="menu-button menu-button--open menu-button--close"></span>
+          <button class="menu-button menu-button--nojs" type="button">
+            <span class="menu-button__icon menu-button__icon--open menu-button__icon--close"></span>
           </button>
         </div>
         <nav class="nav nav--show">
@@ -135,7 +135,7 @@
         </form>
       </section>
       <section class="place">
-        <div class="place__container">
+        <div class="place__container place__container--grey">
           <h2 class="visually-hidden">Местоположение</h2>
           <div class="place__info">
             <span class="place__dealer">Приглашаем<br> к сотрудничеству дилеров!</span>
@@ -144,8 +144,7 @@
               <p class="place__city"> Санкт-Петербург</p>
             </address>
           </div>
-          <!-- <img class="place__map" src="img/bg-map-mobile@1x.png" width="320px" height="362px"> -->
-          <iframe class="place__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A459918337258ffc74759ed6509348803a41ba1c8580d5643d1c13ae109988359&amp;source=constructor" height="362"></iframe>
+          <div class="map" id="map"></div>
         </div>
       </section>
     </main>
@@ -192,5 +191,8 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

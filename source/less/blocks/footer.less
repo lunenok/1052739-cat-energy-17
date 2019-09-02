@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 9px;
   padding: 20px 0;
   padding-left: 73px;
   padding-right: 83px;
@@ -46,7 +46,7 @@
 }
 
 .footer__academy-name {
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
@@ -74,6 +74,10 @@
 
 .footer__icon:active {
   fill: fade(#68b738, 30%);
+}
+
+.footer__link {
+  margin-right: -7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -122,12 +126,16 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .footer__link {
+    margin: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .footer__container {
     width: 1440px;
-    padding: 52px 0;
+    padding: 45px 0;
     padding-left: 110px;
     padding-right: 105px;
   }

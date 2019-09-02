@@ -17,8 +17,8 @@
               <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов">
             </picture>
           </a>
-          <button class="menu-button__container" type="button">
-            <span class="menu-button menu-button--open menu-button--close"></span>
+          <button class="menu-button menu-button--nojs" type="button">
+            <span class="menu-button__icon menu-button__icon--open menu-button__icon--close"></span>
           </button>
         </div>
         <nav class="nav nav--show">
@@ -36,7 +36,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="catalog-main">
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -257,32 +257,32 @@
             <li class="additional__item">
               <h3 class="additional__name">Сахарозаменитель</h3>
               <div class="additional__wrapper">
-                <span class="additional__info additiona__info--amount">1 упаковка (100г)</span>
-                <span class="additional__info additiona__info--price">200 Р.</span>
+                <span class="additional__info additional__info--amount">1 упаковка (100г)</span>
+                <span class="additional__info additional__info--price">200 Р.</span>
               </div>
               <a href="#" class="additional__button button">Заказать</a>
             </li>
             <li class="additional__item">
               <h3 class="additional__name">Питьевая вода</h3>
               <div class="additional__wrapper">
-                <span class="additional__info additiona__info--amount">5 литров</span>
-                <span class="additional__info additiona__info--price">50 Р.</span>
+                <span class="additional__info additional__info--amount">5 литров</span>
+                <span class="additional__info additional__info--price">50 Р.</span>
               </div>
               <a href="#" class="additional__button button">Заказать</a>
             </li>
             <li class="additional__item">
               <h3 class="additional__name">Молоко</h3>
               <div class="additional__wrapper">
-                <span class="additional__info additiona__info--amount">1 литр</span>
-                <span class="additional__info additiona__info--price">100 Р.</span>
+                <span class="additional__info additional__info--amount">1 литр</span>
+                <span class="additional__info additional__info--price">100 Р.</span>
               </div>
               <a href="#" class="additional__button button">Заказать</a>
             </li>
             <li class="additional__item">
               <h3 class="additional__name">Витамины</h3>
               <div class="additional__wrapper">
-                <span class="additional__info additiona__info--amount">1 упаковка (30г)</span>
-                <span class="additional__info additiona__info--price">300 Р.</span>
+                <span class="additional__info additional__info--amount">1 упаковка (30г)</span>
+                <span class="additional__info additional__info--price">300 Р.</span>
               </div>
               <a href="#" class="additional__button button">Заказать</a>
             </li>
@@ -307,8 +307,7 @@
               <p class="place__city"> Санкт-Петербург</p>
             </address>
           </div>
-          <!-- <img class="place__map" src="img/bg-map-mobile@1x.png" width="320px" height="362px"> -->
-          <iframe class="place__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A459918337258ffc74759ed6509348803a41ba1c8580d5643d1c13ae109988359&amp;source=constructor" height="362"></iframe>
+          <div class="map" id="map"></div>
         </div>
       </section>
     </main>
@@ -354,6 +353,9 @@
         </div>
       </div>
     </footer>
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
