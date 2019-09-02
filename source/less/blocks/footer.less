@@ -16,12 +16,21 @@
   margin-bottom: 35px;
 }
 
+.footer__logo:hover,
+.footer__logo:focus {
+  fill: fade(black, 80%);
+}
+
+.footer__logo:active {
+  fill: fade(black, 60%);
+}
+
 .footer__social-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 9px;
   padding: 20px 0;
   padding-left: 73px;
   padding-right: 83px;
@@ -37,15 +46,38 @@
 }
 
 .footer__academy-name {
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
 }
+
 .footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__html-logo {
+  width: 42px;
+  height: auto;
+}
+
+.footer__icon {
+  fill: #666666;
+}
+
+.footer__icon:hover,
+.footer__icon:focus {
+  fill: #68b738;
+}
+
+.footer__icon:active {
+  fill: fade(#68b738, 30%);
+}
+
+.footer__link {
+  margin-right: -7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,7 +85,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 48px 30px;
+    padding: 45px 0;
+    padding-left: 30px;
+    padding-right: 23px;
     width: 768px;
   }
 
@@ -64,22 +98,22 @@
   .footer__social-list {
     margin: 0;
     padding: 0;
-    padding-left: 91px;
-    padding-right: 65px;
+    padding-left: 87px;
+    padding-right: 69px;
     border: none;
   }
 
-  .footer__vk-icon {
+  .footer__icon--vk {
     width: 30px;
     height: 16px;
   }
 
-  .footer__insta-icon {
+  .footer__icon--insta {
     width: 23px;
     height: 23px;
   }
 
-  .footr__fb-icon {
+  .footer__icon--fb {
     width: 14px;
     height: 28px;
   }
@@ -93,15 +127,21 @@
     line-height: 16px;
   }
 
-  .footer__html-logo {
-    width: 27px;
-    height: 34px;
+  .footer__link {
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer__container {
     width: 1440px;
-    padding: 53px 110px;
+    padding: 45px 0;
+    padding-left: 110px;
+    padding-right: 105px;
+  }
+
+  .footer__social-list {
+    padding-left: 87px;
+    padding-right: 69px;
   }
 }

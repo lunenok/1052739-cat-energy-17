@@ -1,13 +1,21 @@
+.header--catalog {
+  margin-bottom: 17px;
+}
+
+.header--programms {
+  margin-bottom: 14px;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 13px 0;
   width: 280px;
   margin: 0 auto;
 }
 
-.header__toogle {
+.menu-button__container {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -28,6 +36,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .header--catalog {
+    margin-bottom: 34px;
+  }
+
+  .header--programms {
+    margin-bottom: 34px;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -42,7 +58,7 @@
     margin: 0;
   }
 
-  .header__toogle {
+  .menu-button__container {
     display: none;
   }
   .header__logo-image {
@@ -52,6 +68,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header--catalog {
+    margin-bottom: 50px;
+  }
+
+  .header--programms {
+    margin-bottom: 50px;
+  }
+
   .header__container {
     position: relative;
     margin: 0 auto;
