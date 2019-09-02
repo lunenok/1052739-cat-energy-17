@@ -59,10 +59,6 @@
   margin-bottom: 14px;
 }
 
-.selection__fieldset--comment {
-  margin-bottom: 28x;
-}
-
 .selection__name {
   position: relative;
   display: inline-block;
@@ -71,6 +67,7 @@
   font-size: 24px;
   line-height: 24px;
   background: white;
+
   &::before {
     content: "";
     position: absolute;
@@ -192,9 +189,11 @@
   height: 45px;
   border: 1px solid fade(#cdcdcd, 50%);
   outline: none;
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
+
   &:active,
   &:focus {
     border: 2px solid #444444;
@@ -266,7 +265,7 @@
 }
 
 .selection__list {
-  .list-style-clean
+  .list-style-clean;
 }
 
 .selection__list--radio {
@@ -286,16 +285,16 @@
 
 .selection__radio,
 .selection__checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .selection__button {
@@ -314,7 +313,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .selection {
     margin-bottom: 73px;
   }
@@ -340,7 +338,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 325px;
-    .regular_tablet-text
+    .regular_tablet-text;
   }
 
   .selection__container {
@@ -349,7 +347,7 @@
 
   .selection__label {
     margin-right: 17px;
-    .regular_tablet-text
+    .regular_tablet-text;
   }
 
   .selection__label--weight {
@@ -380,23 +378,23 @@
 
   .selection__checkbox + .selection__label--checkbox::before,
   .selection__radio + .selection__label--radio::before {
-  top: -4px;
-  left: -59px;
-  width: 40px;
-  height: 40px;
-}
+    top: -4px;
+    left: -59px;
+    width: 40px;
+    height: 40px;
+  }
 
   .selection__radio:checked + .selection__label--radio::after {
     top: 7px;
     left: -48px;
     width: 18px;
     height: 18px;
-}
+  }
 
   .selection__input {
     height: 52px;
     padding-left: 18px;
-    .regular_tablet-text
+    .regular_tablet-text;
   }
 
   .selection__fieldset {
@@ -414,10 +412,12 @@
     font-size: 36px;
     line-height: 36px;
     background-color: white;
+
     &::before {
       top: 22px;
       left: 35px;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -445,12 +445,13 @@
   .selection__name--additional {
     padding-left: 39px;
     margin-left: -39px;
+    margin-bottom: 68px;
     width: 291px;
   }
 
   .selection__fieldset--owner {
     margin-bottom: 45px;
-    }
+  }
 
   .selection_textarea {
     padding: 10px 18px;
@@ -460,15 +461,11 @@
   .selection_textarea::-webkit-input-placeholder,
   .selection__input::-webkit-input-placeholder {
     line-height: 30px;
-    .regular_tablet-text
+    .regular_tablet-text;
   }
 
   .selection__fieldset--comment {
     margin-bottom: 62px;
-  }
-
-  .selection__name--additional {
-    margin-bottom: 68px;
   }
 
   .selection__fieldset--checkbox {
@@ -512,6 +509,7 @@
     width: 283px;
     min-height: 52px;
   }
+
   .selection__main {
     margin-left: 62px;
     width: 180px;
@@ -521,7 +519,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .selection {
     margin-bottom: 84px;
   }
@@ -596,10 +593,6 @@
 
   .selection__fieldset--radio {
     min-height: 196px;
-  }
-
-  .selection__fieldset--checkbox {
-    margin-bottom: 17px;
   }
 
   .selection__button {

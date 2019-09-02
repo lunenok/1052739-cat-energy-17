@@ -25,8 +25,9 @@
   margin-left: 81px;
   margin-bottom: 26px;
   width: 195px;
+
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     top: -2px;
     left: -81px;
@@ -35,8 +36,9 @@
     background-color: #68b738;
     z-index: 1;
   }
+
   &::after {
-    content:"";
+    content: "";
     position: absolute;
     background-repeat: no-repeat;
     top: 3px;
@@ -105,30 +107,33 @@
     width: 250px;
     min-height: 235px;
     counter-increment: step-counter;
+
     &::before {
       top: 37px;
-      left: 0px;
+      left: 0;
       width: 80px;
       height: 80px;
     }
+
     &::after {
       top: 50px;
       left: 15px;
     }
   }
+
   .how__discription {
     position: relative;
     width: 250px;
     z-index: 5;
     font-size: 16px;
     line-height: 24px;
+
     &::after {
       content: counter(step-counter);
       position: absolute;
       font-family: "Oswald", "Arial", sans-serif;
       left: 117px;
       top: -23px;
-      position: absolute;
       font-size: 280px;
       color: #f2f2f2;
       z-index: -1;

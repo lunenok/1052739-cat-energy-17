@@ -19,11 +19,13 @@
   list-style: none;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
-  &:active{
+
+  &:active {
     opacity: 0.3;
   }
 }
@@ -42,7 +44,6 @@
     display: flex;
     margin-left: auto;
     width: auto;
-
   }
 
   .nav__list {
@@ -62,6 +63,7 @@
 
   .nav__item-active {
     position: relative;
+
     &::after {
       position: absolute;
       content: "";
@@ -90,6 +92,7 @@
       background-color: #ffffff;
     }
   }
+
   .nav__link {
     font-size: 20px;
     line-height: 25px;
