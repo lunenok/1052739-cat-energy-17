@@ -9,11 +9,11 @@ button.classList.remove("menu-button--nojs");
 button.addEventListener("click", function(evt) {
   nav.classList.toggle("nav--show");
   if(icon.classList.contains("menu-button__icon--open")) {
-    icon.classList.remove("menu-button__icon--open")
-    icon.classList.add("menu-button__icon--close")
+    icon.classList.remove("menu-button__icon--open");
+    icon.classList.add("menu-button__icon--close");
   }
   else {
-    icon.classList.remove("menu-button__icon--close")
-    icon.classList.add("menu-button__icon--open")
+    icon.classList.remove("menu-button__icon--close");
+    icon.classList.add("menu-button__icon--open");
   };
 });
