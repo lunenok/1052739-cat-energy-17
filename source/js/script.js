@@ -15,5 +15,5 @@ button.addEventListener("click", function(evt) {
   else {
     icon.classList.remove("menu-button__icon--close")
     icon.classList.add("menu-button__icon--open")
-  }
+  };
 });
