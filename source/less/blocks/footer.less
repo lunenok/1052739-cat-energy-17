@@ -27,7 +27,8 @@
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 9px;
@@ -42,7 +43,13 @@
 
 .footer__social-item {
   margin: 0;
+  margin-right: 36  px;
+  // margin-bottom: 30px;
   padding: 0;
+}
+
+.footer__social-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .footer__academy-name {

@@ -42,6 +42,9 @@
           <h1 class="promo__headline">Функциональное питание для котов</h1>
           <span class="promo__motto">Занялся собой? Займись котом!</span>
           <picture class="promo__logo-container">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="promo__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy">
@@ -91,18 +94,17 @@
               <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
               <div class="example__description">
                 <div class="example__result">
-                  5 кг
+                  <div>5 кг</div>
                   <span class="example__position">снижение веса</span>
                 </div>
                 <div class="example__result">
-                  60 дней
+                  <span>60 дней</span>
                   <span class="example__position">затрачено времени</span>
                 </div>
                 <span class="example__price">
                   <span class="example__price-description">Затраты на питание:</span>
                   <span class="example__price-value">15 000 руб.</span>
                 </span>
-
               </div>
             </div>
             <div class="slider">
@@ -110,16 +112,22 @@
                 <div class="slider__pictures">
                   <div class="slider__container-before">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                       <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                      <img class="slider__pic slider__pic--before" src="img/before-mobile@1x.png" width="311" height="232" alt="Борис">
+                      <img class="slider__pic slider__pic--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Борис">
                     </picture>
                   </div>
                   <div class="slider__container-after">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                       <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                       <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                      <img class="slider__pic slider__pic--after" src="img/after-mobile@1x.png" width="311" height="232" alt="Борис">
+                      <img class="slider__pic slider__pic--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Борис">
                     </picture>
                   </div>
                 </div>
