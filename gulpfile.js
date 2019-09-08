@@ -9,12 +9,33 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
 var webp = require("gulp-webp");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
+
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+})
 
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality:90}))
     .pipe(gulp.dest("source/img"));
 });
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSVG:true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+})
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -61,4 +82,4 @@ gulp.task("del", function() {
 )
 
 gulp.task("start", gulp.series("css", "server"));
-gulp.task("build", gulp.series("del","copy", "css"));
+gulp.task("build", gulp.series("del","copy", "sprite" ,"html", "css",));
