@@ -101,7 +101,7 @@
     left: 95px;
     width: 25px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 }
@@ -111,7 +111,18 @@
   &::after {
     width: 34px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.programms__link:active {
+  opacity: 0.3;
+
+  &::after {
+    width: 34px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
   }
 }
@@ -191,6 +202,7 @@
 @media (min-width: @desktop-width) {
   .programms__container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 1220px;
   }
@@ -203,8 +215,12 @@
     width: 570px;
   }
 
-  .programms__item--slim {
+  .programms__item {
     margin-right: auto;
+  }
+
+  .programms__item:nth-child(2n+1) {
+    margin-right: 0;
   }
 
   .programms__title {
